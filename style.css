@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cl: rgb(240, 186, 186);
+}
+
+.nav {
+  background-color: var(--bg-cl);
+}
+
+.sidebar{
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all ease-in-out .5s;
+  }
+
+.sidebar.active{
+  transform: translateX(0);
+}
+
+.svgHam{
+  mix-blend-mode: none;
+}
+
+.svgHam.active{
+   mix-blend-mode: none;
+}
+
+.btnn.active {
+  background-color: rgb(209, 92, 92);
+}
+
+/* .btnn:active{
+  background-color: rgb(209, 92, 92);
+} */
+
+
+@media(max-width: 300px){
+    .sidebar{
+        width: 100%;
+    }
+    
+}
